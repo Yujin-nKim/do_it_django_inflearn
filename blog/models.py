@@ -7,7 +7,9 @@ class Post(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField()
 
-    head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank="True")
+    head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
+    file_upload = models.FileField(upload_to='blog/files/%Y/%m/%d/' , blank=True)
+
     created_at = models.DateTimeField(auto_now_add=True) #새로만들어졌을때 현재 시간으로
     updated_at = models.DateTimeField(auto_now=True)
     # author: 추후 작성 예정
