@@ -33,7 +33,7 @@ class PostDetail(DetailView):
 #
 #     return render(
 #         request,
-#         'blog/single_page.html',
+#         'blog/post_detail.html',
 #         {
 #             'post' : post
 #         }
