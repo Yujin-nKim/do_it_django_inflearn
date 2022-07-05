@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('blog/', include('blog.urls')), #blog app에 있는 urls.py를 사용해라
     path('admin/', admin.site.urls),
+    path('', include('single_pages.urls')),
 ]
